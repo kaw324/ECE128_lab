@@ -18,7 +18,7 @@ The one-bit full adder is a fundamental building block in digital design. This l
 File Structure
 lab_2.v - Main design file for the one-bit full adder.
 lab_2_tb.v - Testbench for the full adder.
-constraints.xdc - Constraints file containing pin assignments for FPGA implementation.
+Basys-3-Master.xdc - Constraints file containing pin assignments for FPGA implementation.
 
 Setup Instructions
 Clone this repository to your local machine.
@@ -28,7 +28,7 @@ Open the project in your preferred Verilog development environment.
 Usage
 Load the lab_2.v and lab_2_tb.v files into your project.
 Run the simulation using lab_2_tb.v as the top module to observe the full adder's functionality for all input combinations.
-For hardware implementation, use lab_2.v as the top module and apply the provided constraints from constraints.xdc.
+For hardware implementation, use lab_2.v as the top module and apply the provided constraints from Basys-3-Master.xdc.
 
 Demonstration
 To demonstrate the design on an FPGA:
@@ -45,7 +45,7 @@ Testbench (lab_2_tb.v)
 Test Scenarios: The testbench, lab_2_tb, is designed to simulate the full adder by applying all possible input combinations and observing the outputs.
 Simulation Duration: Each input combination is applied for a duration of 10 time units, ensuring sufficient time to observe the outputs for each scenario.
 
-Constraints (constraints.xdc)
+Constraints (Basys-3-Master.xdc)
 Pin Assignments: This file contains the FPGA pin assignments for the inputs and outputs of the full adder. The pins for A, B, and Cin are V17, V16, and W16 respectively, while the outputs, Cout and SUM, are assigned to U16 and E19 respectively.
 Configuration Options: The file also sets certain FPGA configuration options, such as voltage levels and SPI configuration mode.
 
